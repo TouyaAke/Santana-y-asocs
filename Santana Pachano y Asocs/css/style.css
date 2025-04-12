@@ -1,0 +1,301 @@
+/* Variables CSS */
+:root {
+    --primary-color: #021526;
+    --secondary-color: #05325a;
+    --text-color: #D4D2D5;
+    --text-color-claro: #d4d2d5a8;
+    --text-color-alt: #021526;
+    --font-family-main: 'Times New Roman', Times, serif;
+    --font-family-alt: 'Roboto', sans-serif;
+    --gap: 20px;
+    --border-radius: 10px;
+    --icon-color: #691e1e;
+}
+
+/* General Reset */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-family-main);
+}
+
+p {
+    font-family: var(--font-family-alt);
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #D4D2D5;
+}
+
+/* Sección Info */
+#info {
+    padding: 3vw;
+    text-align: center;
+}
+
+#info .first-info {
+    max-width: 60vw;
+    margin: 5vh auto 20vh auto;
+}
+
+#info .first-info .title,
+#info .second-info .title {
+    font-size: 2.5em;
+    color: var(--primary-color);
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+#info .first-info .parra,
+#info .second-info .parra {
+    font-size: 1.1em;
+}
+
+#info .second-info .content {
+    margin: 0 auto;
+    width: 80vw;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.2em;
+}
+
+#info .second-info .content button {
+    padding: 15px;
+    border: 1px solid black;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    margin-top: 20px;
+    width: 15vw;
+    font-size: 1.2em;
+}
+
+#info .second-info .content .check-list {
+    width: 30vw;
+    padding: 5vh 0;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Sección Servicios */
+#servicios {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 3vw;
+    text-align: center;
+}
+
+#servicios h3 {
+    font-size: 2.7em;
+    margin: 25px 0;
+    font-weight: bold;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    padding: 0 5vw;
+    margin-top: 6vh;
+}
+
+.services div:not(:nth-child(3n)) {
+    border-right: 1px solid #2422418a;
+    /* gris oscuro */
+}
+
+.services div:nth-child(-n+6) {
+    border-bottom: 1px solid #2422418a;
+}
+
+.services div {
+    padding: 30px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.services div h4 {
+    font-size: 1.5em;
+    margin: 20px 0 10px 0;
+    font-weight: bold;
+}
+
+/* Estilos para íconos */
+.services i {
+    font-size: 2em;
+    color: var(--icon-color);
+    margin-top: 10px;
+}
+
+/* Sección Contacto */
+#contacto,
+.contacto {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 3vw;
+    text-align: left;
+    background: linear-gradient(175deg, #021526 40%, #04233d74 100%), url(../img/fondo3.png);
+}
+
+#contacto h3,
+.contacto h3 {
+    font-size: 2.5em;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.contacto p {
+    font-size: 1.2em;
+    margin: 20px 0;
+    color: var(--text-color-claro);
+}
+
+.contacto button {
+    padding: 20px;
+    border: 1px solid #D4D2D5;
+    background-color: #021526;
+    color: var(--text-color);
+    margin-top: 50px;
+    width: 15vw;
+    font-size: 1.5em;
+    transition: 0.3s ease;
+}
+
+.contacto button:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+}
+
+footer .caja1 {
+    border-bottom: #2422418a 1px solid;
+    padding: 3vh 1vw;
+    width: 90%;
+    margin: 0 auto;
+}
+
+footer .caja1 p {
+    text-align: left;
+    margin-left: 2vw;
+}
+
+footer .caja1 .logo {
+    display: flex;
+    align-items: center;
+
+}
+
+footer .caja1 .logo p {
+    font-size: 2em;
+    line-height: 20px;
+    color: white;
+}
+
+footer .caja1 .logo span {
+    font-size: .6em;
+}
+
+footer .caja1 .logo img {
+    width: 110px;
+    margin-right: -30px;
+}
+
+footer .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1vh 3vw;
+}
+
+.caja2,
+.caja3,
+.caja4 {
+    padding: 20px;
+    color: var(--text-color);
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 0 auto;
+
+    h3 {
+        font-size: 1.5em;
+        margin: 5px 0 15px 0;
+        color: white;
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--text-color-claro);
+        font-size: 1.2em;
+        margin: 15px 0;
+    }
+
+    a:hover {
+        color: var(--text-color-claro);
+        transition: 0.3s ease;
+    }
+
+    p {
+        margin: 15px 0;
+        color: var(--text-color);
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    p:hover {
+        color: var(--text-color-claro);
+        transition: 0.3s ease;
+    }
+
+    span {
+        color: var(--text-color-claro);
+    }
+
+    i {
+        background-color: var(--secondary-color);
+        padding: 10px;
+        margin-right: 10px;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .instagram {
+        background-color: #021526;
+        color: var(--secondary-color);
+        margin-right: -2px;
+    }
+
+    .ig {
+        color: var(--text-color);
+    }
+}
+
+footer .copy {
+    padding: 20px;
+    color: var(--text-color-claro);
+    justify-content: space-around;
+    display: flex;
+    background-color: var(--secondary-color);
+}
+
+footer .copy a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
